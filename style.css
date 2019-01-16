@@ -1,9 +1,9 @@
 body{
     max-width: 90%;
     margin: auto;
-    background-image:url(img/kisspng-purple-abstract-fantasy-abstract-purple-lines-5a9802e8632a09.8998568715199116564062.jpg) , radial-gradient(rgb(237, 22, 210), rgb(118, 182, 246));
-    background-repeat: no-repeat, no-repeat;
-    background-position: cover, bottom right ;
+    background-image:radial-gradient(rgb(237, 22, 210), rgb(118, 182, 246));
+    background-repeat: no-repeat;
+    background-position: cover ;
 }
 
 
@@ -14,21 +14,25 @@ p{
     font-size: 20px;
 }
 
+header :first-child {
+    font-weight : bold;
+  }
+
 .nav1{
     background-color: yellow;
 }
 
 a.nav{
     text-decoration: none;
-    border-image: linear-gradient(red, blue) 27/20px;
+    border-image: linear-gradient(rgb(237, 22, 210), rgb(118, 182, 246)) 20/20px;
     color: #fff;
     padding: 5px;
     margin: 5px;
-    
+ 
 }
 
 a.nav:hover{
-    border-image: linear-gradient(rgb(54, 41, 128), rgb(174, 201, 24)) 27/20px;
+    border-image: linear-gradient(rgb(118, 182, 246),rgb(237, 22, 210)) 20/20px;
 }
 
 a.nav:visited{
@@ -44,7 +48,6 @@ q{
     font-size: 1.6em;
     line-height: 30px;
     background-color: rgb(219, 213, 213);
-    
     padding-left: 30px;
     margin-bottom: 80px;
     margin-top: 80px;
@@ -65,4 +68,50 @@ q:before {
   
   q:after {
     content: "";
+  }
+
+  .bien{
+    text-transform: uppercase;
+    color: green;
+  }
+
+  .mal{
+    text-transform: uppercase;
+    color: red;
+  }
+
+  table{
+    border-collapse: separate;
+  }
+  tr:nth-child(even) {
+    background: #CCC
+  }
+
+  tr:nth-child(odd) {
+    background: #fff
+  }
+
+  ul :nth-child(1){
+      list-style-image: url(img/bien.png);
+    
+  }
+
+  ul :nth-child(2){
+      list-style-image: url(img/mal.png);
+  }
+
+  ul :nth-child(3){
+    background-image: url(img/chat.png);
+    background-repeat: no-repeat;
+  }
+
+  img{
+      float: left;
+      margin: 15px;
+      width: 75%;
+      padding: 15px;
+  }
+
+  #clear{
+      clear: none;
   }
